@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/fragment_home">
+
+    <fragment
+        android:id="@+id/fragment_home"
+        android:name="com.example.yelpapp.ui.view.HomeFragment"
+        android:label="@string/action_title_home"
+        tools:layout="@layout/fragment_restaurants_list">
+
+        <action
+            android:id="@+id/action_fragment_home_to_fragment_details"
+            app:destination="@id/fragment_details"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_details"
+        android:name="com.example.yelpapp.ui.view.RestaurantsFragment"
+        android:label="@string/title_favorites"
+        tools:layout="@layout/fragment_restaurants_list" >
+
+        <action
+            android:id="@+id/action_fragment_favorites_to_fragment_details"
+            app:destination="@id/fragment_ratings"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_ratings"
+        android:name="com.example.yelpapp.ui.view.ReviewsFragment"
+        android:label="@string/action_title_restaurants"
+        tools:layout="@layout/fragment_ratings" >
+
+        <action
+            android:id="@+id/action_fragment_ratings_to_fragment_details2"
+            app:destination="@+id/fragment_details"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_favorite"
+        android:name="com.example.yelpapp.ui.view.FavoriteFragment"
+        android:label="@string/action_title_restaurants"
+        tools:layout="@layout/fragment_ratings">
+
+        <action
+            android:id="@+id/action_fragment_favorites_to_fragment_details"
+            app:destination="@+id/fragment_details" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="circle_image_view" parent=" ">
+        <item name="corner_family">Rounded</item>
+        <item name="corner_size">50%</item>
+    </string>
+
+    <style name="rating_bar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/lightGrey</item>
+        <item name="colorControlActivated">@color/duskYellow</item>
+    </style>
+</resources>

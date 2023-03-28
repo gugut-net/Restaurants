@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">YelpApp</string>
+    <string name="title_search">Search</string>
+    <string name="action_title_home">Home</string>
+    <string name="title_favorites">Favorites</string>
+    <string name="action_title_restaurants">Favorite Restaurants</string>
+
+
+    <!-- Top bar menu -->
+    <string name="item_title_restaurant">Restaurant</string>
+    <string name="item_title_ratings">Ratings</string>
+
+    <string name="tv_restaurants_near_you">Restaurants Near You</string>
+    <string name="tv_text_time_created">Time Created</string>
+    <string name="tv_text_user_rating">User Rating</string>
+    <string name="tv_text_user_name">User Name</string>
+    <string name="tv_text_distance">Distance</string>
+    <string name="tv_restaurant_name">Restaurant Name</string>
+    <string name="tv_text_price">$$$</string>
+    <string name="tv_text_phone_number">Phone Number</string>
+    <string name="tv_text_address">Address</string>
+
+    <string name="ib_favorite">Favorite Star</string>
+
+
+    <string name="iv_restaurant_image">Restaurant Image</string>
+</resources>
